@@ -58,7 +58,7 @@
                             </div>
                             <a href="">Recuperar contraseña</a>
                         </div>
-                        <button class="btn btn-primary py-3 w-100 mb-4" id="btnIniciarSesion" name="btnIniciarSesion" type="subit">Iniciar Sesion</button>
+                        <button class="btn btn-primary py-3 w-100 mb-4" id="btnIniciarSesion" name="btnIniciarSesion" type="submit">Iniciar Sesion</button>
 
                         <p class="text-center mb-0">No tienes una cuenta? <a href="Registro.php">Crear cuenta</a></p>
 

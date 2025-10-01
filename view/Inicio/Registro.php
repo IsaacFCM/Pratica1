@@ -1,3 +1,7 @@
+<?php
+  include_once $_SERVER['DOCUMENT_ROOT'] .'/Curso/Pratica1/Pratica1/Controller/InicioController.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,27 +39,36 @@
                             </a>
                             <h3>Registro</h3>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingText" placeholder="jhondoe">
-                            <label for="floatingText">Nombre de usuario</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Correo electrónico</label>
-                        </div>
-                        <div class="form-floating mb-4">
-                            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                            <label for="floatingPassword">Contraseña</label>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-between mb-4">
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Mostrar contraseña</label>
-                            </div>
-                           
-                        </div>
-                        <a href="IniciarSesion.php" class="btn btn-primary py-3 w-100 mb-4">Crear cuenta</a>
-                        <p class="text-center mb-0">¿Ya tienes una cuenta? <a href="">Ingresar</a></p>
+
+                        <form id="formAuthentication" class="mb-3" action="" method="POST"> 
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Nombre de usuario</label>
+        <input type="text" class="form-control" id="username" name="username" placeholder="jhondoe">
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+    </div>
+
+    <div class="mb-4">
+        <label for="password" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+    </div>
+
+    <div class="d-flex align-items-center justify-content-between mb-4">
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Mostrar contraseña</label>
+        </div>
+    </div>
+
+    <button class="btn btn-primary py-3 w-100 mb-4" id="btnCrearCuenta" name="btnCrearCuenta" type="submit">Crear Cuenta</button>
+
+    <p class="text-center mb-0">¿Ya tienes una cuenta? <a href="IniciarSesion.php">Ingresar</a></p>
+</form>
+
                     </div>
                 </div>
             </div>
